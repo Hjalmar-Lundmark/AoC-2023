@@ -10,6 +10,7 @@ public class day1 {
         int total = 0;
         int firstInt = 0;
         int lastInt = 0;
+        boolean part2 = true;
 
         for (int i = 0; i < lines.length; i++) {
             // get first int
@@ -19,6 +20,40 @@ public class day1 {
                     firstInt = Integer.parseInt(String.valueOf(chars[j]));
                     System.out.println(firstInt);
                     break;
+                }
+                // please close this, ugly solution
+                else if (part2) {
+                    String threeLetter = chars[j] + "" + chars[j+1] + chars[j+2];
+                    String fourLetter = chars[j] + "" + chars[j+1] + chars[j+2] + chars[j+3];
+                    String fiveLetter = chars[j] + "" + chars[j+1] + chars[j+2] + chars[j+3] + chars[j+4];
+                    if (threeLetter.equals("one")) {
+                        firstInt = 1;
+                        break;
+                    } else if (threeLetter.equals("two")) {
+                        firstInt = 2;
+                        break;
+                    } else if (fiveLetter.equals("three")) {
+                        firstInt = 3;
+                        break;
+                    } else if (fourLetter.equals("four")) {
+                        firstInt = 4;
+                        break;
+                    } else if (fourLetter.equals("five")) {
+                        firstInt = 5;
+                        break;
+                    } else if (threeLetter.equals("six")) {
+                        firstInt = 6;
+                        break;
+                    } else if (fiveLetter.equals("seven")) {
+                        firstInt = 7;
+                        break;
+                    } else if (fiveLetter.equals("eight")) {
+                        firstInt = 8;
+                        break;
+                    } else if (fourLetter.equals("nine")) {
+                        firstInt = 9;
+                        break;
+                    }
                 }
             }
 
@@ -31,6 +66,40 @@ public class day1 {
                     lastInt = Integer.parseInt(String.valueOf(chars[j]));
                     System.out.println(lastInt);
                     break;
+                }
+                // please close this, ugly solution
+                else if (part2) {
+                    String threeLetter = chars[j] + "" + chars[j+1] + chars[j+2];
+                    String fourLetter = chars[j] + "" + chars[j+1] + chars[j+2] + chars[j+3];
+                    String fiveLetter = chars[j] + "" + chars[j+1] + chars[j+2] + chars[j+3] + chars[j+4];
+                    if (threeLetter.equals("eno")) {            //one
+                        firstInt = 1;
+                        break;
+                    } else if (threeLetter.equals("owt")) {     //two
+                        firstInt = 2;
+                        break;
+                    } else if (fiveLetter.equals("eerht")) {    //three
+                        firstInt = 3;
+                        break;
+                    } else if (fourLetter.equals("ruof")) {     //four
+                        firstInt = 4;
+                        break;
+                    } else if (fourLetter.equals("evif")) {     //five
+                        firstInt = 5;
+                        break;
+                    } else if (threeLetter.equals("xis")) {     //six
+                        firstInt = 6;
+                        break;
+                    } else if (fiveLetter.equals("neves")) {    //seven
+                        firstInt = 7;
+                        break;
+                    } else if (fiveLetter.equals("thgie")) {    //eight
+                        firstInt = 8;
+                        break;
+                    } else if (fourLetter.equals("enin")) {     //nine
+                        firstInt = 9;
+                        break;
+                    }
                 }
             }
 
