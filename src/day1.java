@@ -21,7 +21,6 @@ public class day1 {
             for (int j = 0; j < chars.length; j++) {
                 if (isInt(chars[j])) {
                     firstInt = Integer.parseInt(String.valueOf(chars[j]));
-                    System.out.println(firstInt);
                     break;
                 }
                 // ugly solution
@@ -77,13 +76,10 @@ public class day1 {
             }
 
             // get second int
-            System.out.println(chars);
             chars = reverse(chars);
-            System.out.println(chars);
             for (int j = 0; j < chars.length; j++) {
                 if (isInt(chars[j])) {
                     lastInt = Integer.parseInt(String.valueOf(chars[j]));
-                    System.out.println(lastInt);
                     break;
                 }
                 // ugly solution
@@ -139,7 +135,6 @@ public class day1 {
             }
 
             total = total + (firstInt * 10) + lastInt;
-            System.out.println(total);
         }
         System.out.println(total);
     }
