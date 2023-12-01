@@ -24,7 +24,7 @@ public class day1 {
                     System.out.println(firstInt);
                     break;
                 }
-                // please close this, ugly solution
+                // ugly solution
                 else if (part2) {
                     if((j+2) >= chars.length) {
                         threeLetter = "";
@@ -86,7 +86,7 @@ public class day1 {
                     System.out.println(lastInt);
                     break;
                 }
-                // please close this, ugly solution
+                // ugly solution
                 else if (part2) {
                     if((j+2) >= chars.length) {
                         threeLetter = "";
